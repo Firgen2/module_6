@@ -6,17 +6,8 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 2000px;
-}
-
-body {
-    background-color: #0b1d26;
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 60%, rgba(11, 29, 38) 100%), url("/img/bg1920x1080.png");
-    background-size: cover;
+    background-color: rgba(11, 29, 38, 1);
 }
 
 p {
@@ -24,8 +15,16 @@ p {
     margin: 0;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
 header {
     display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
 }
 
 button {
@@ -36,15 +35,6 @@ button {
     color: inherit;
     font: inherit;
     cursor: pointer;
-}
-
-.bg_image {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
 }
 
 .nav_header {
@@ -103,8 +93,10 @@ button {
 }
 
 .socials {
+    display: flex;
     position: fixed;
     top: 30%;
+    left: 0;
 }
 
 .socials ul {
@@ -135,12 +127,15 @@ button {
     user-select: none;
 }
 
-.slider_container {
+.start_container {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    position: fixed;
-    top: 25%;
-    right: 80px;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 60%, rgba(11, 29, 38) 100%), url("/img/bg1920x1080.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .left_nav {
@@ -170,9 +165,13 @@ button {
 
 .slider_container {
     display: flex;
+    flex-direction: row;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     height: 300px;
+    top: 25%;
+    right: 80px;
 }
 
 .left_nav {
@@ -191,9 +190,9 @@ button {
 .right_slider {
     width: 50px;
     height: 300px;
-    display: flex; /* Для вертикального размещения */
-    flex-direction: column; /* Вертикальное направление */
-    justify-content: flex-end; /* Чтобы заполнение было снизу вверх */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .fillStart,
@@ -207,12 +206,12 @@ button {
 }
 
 .content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Сдвигаем элемент на половину его ширины и высоты */
+    display: flex;
+    flex-direction: column;
     max-width: 950px;
-    text-align: left; /* Выравнивание текста по левому краю */
+    text-align: left;
+    position: absolute;
+    top: 20%;
 }
 
 .content h1 {
@@ -225,14 +224,14 @@ button {
     gap: 32px;
 }
 
-.content h2 {
+.content h3 {
     color: #fbd784;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     letter-spacing: 6px;
 }
 
-.content p {
+.content span {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     color: #ffffff;
@@ -241,9 +240,100 @@ button {
 
 .yellow_rectangle {
     display: inline-block;
-    width: 72px; /* Ширина прямоугольника */
-    height: 2px; /* Высота прямоугольника */
-    background-color: #fbd784; /* Желтый цвет */
-    margin-right: 10px; /* Отступ справа от прямоугольника */
-    vertical-align: middle; /* Вертикальное выравнивание по середине текста */
+    width: 72px;
+    height: 2px;
+    background-color: #fbd784;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 200px;
+    background-color: rgba(11, 29, 38, 1);
+}
+
+.section1,
+.section2,
+.section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    position: relative;
+}
+
+.section1 span,
+.section2 span,
+.section3 span {
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255, 0.1);
+    font-size: 240px;
+    font-weight: bold;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.section_content h2 {
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 64px;
+    max-width: 555px;
+}
+
+.section_content h3 {
+    color: #fbd784;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 800;
+}
+
+.section_content p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #ffffff;
+    max-width: 632px;
+}
+
+.section_content button {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 127px;
+    max-height: 27px;
+    color: #fbd784;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_mntn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
