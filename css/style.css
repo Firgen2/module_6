@@ -6,7 +6,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 4600px;
     background-color: rgba(11, 29, 38, 1);
 }
 
@@ -159,11 +159,6 @@ button {
     right: 0;
 }
 
-.right_slider {
-    display: flex;
-    align-items: center;
-}
-
 .slider_container {
     display: flex;
     flex-direction: row;
@@ -189,7 +184,8 @@ button {
 }
 
 .right_slider {
-    width: 50px;
+    display: flex;
+    align-items: center;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -254,7 +250,7 @@ button {
     justify-content: center;
     row-gap: 200px;
     background-color: rgba(11, 29, 38, 1);
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .section1,
@@ -269,16 +265,23 @@ button {
     height: 720px;
 }
 
-.section1 span,
-.section2 span,
-.section3 span {
+.section1 > span,
+.section2 > span,
+.section3 > span {
     font-family: "Poppins", sans-serif;
     color: rgb(255, 255, 255, 0.1);
     font-size: 240px;
+    line-height: 240px;
     font-weight: bold;
     position: absolute;
-    top: 38px;
+    top: 0;
     left: 0;
+}
+
+.section1 img,
+.section2 img,
+.section3 img {
+    object-fit: contain;
 }
 
 .main_container {
@@ -294,8 +297,7 @@ button {
     justify-content: center;
     text-align: left;
     max-width: 632px;
-    left: 10%;
-    position: relative;
+    margin-left: 10%;
 }
 
 .section_content h2 {
@@ -321,6 +323,7 @@ button {
     line-height: 32px;
     color: #ffffff;
     max-width: 632px;
+    text-overflow: ellipsis;
 }
 
 .section_content button {
@@ -334,15 +337,13 @@ button {
 footer {
     height: auto;
     width: 100%;
-    position: absolute;
 }
 
 .footer_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
-    margin-bottom: 120px;
 }
 
 .footer_copyright p {
