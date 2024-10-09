@@ -24,3 +24,27 @@ links.forEach(link => {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menu = document.getElementById("menu");
+  const btnOpen = document.getElementById("btn_open_menu");
+  const btnClose = document.getElementById("btn_close_mobile_nav");
+
+  // Функция для открытия меню
+  function openMenu() {
+    menu.style.display = "flex";
+  }
+
+  // Функция для закрытия меню
+  function closeMenu() {
+    menu.style.display = "none";
+  }
+
+  // Событие для открытия меню
+  btnOpen.addEventListener("click", openMenu);
+
+  // Событие для закрытия меню
+  btnClose.addEventListener("click", closeMenu);
+});
+

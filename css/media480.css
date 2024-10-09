@@ -1,0 +1,222 @@
+@media (max-width: 480px) {
+    .section_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .section1,
+    .section2,
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .section_img img,
+    .section_img img,
+    .section_img img {
+        object-fit: contain;
+        max-width: 440px;
+    }
+
+    .section1 .section_img,
+    .section3 .section_img {
+        margin-left: 0px;
+    }
+
+    .section2 .section_img {
+        margin-right: 0px;
+    }
+    .section_content {
+        margin-left: 0%;
+    }
+
+    .section2_span {
+        left: 0%;
+    }
+
+    .content h1 {
+        max-width: 517px;
+        font-size: 44px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    .content span {
+        font-size: 16px;
+    }
+
+    .left_nav .nav_link {
+        font-size: 16px;
+    }
+
+    .slider_container {
+        right: 48px;
+        top: 20%;
+    }
+
+    .section_content p {
+        font-size: 14px;
+        font-weight: 500;
+        width: 440px;
+    }
+    .section_content h2 {
+        font-size: 30px;
+    }
+
+    .section_content h3 {
+        font-size: 14px;
+    }
+    .section1 > span,
+    .section2 > span,
+    .section3 > span {
+        font-size: 140px;
+        line-height: 150px;
+    }
+
+    .section_content button {
+        font-size: 16px;
+    }
+
+    .footer_copyright p {
+        font-size: 12px;
+        width: 440px;
+    }
+    .footer_copyright span {
+        font-size: 14px;
+    }
+
+    .footer_blog p,
+    .footer_mntn p {
+        font-size: 20px;
+    }
+
+    .footer_blog ul,
+    .footer_mntn ul {
+        font-size: 16px;
+    }
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    .nav_header {
+        display: none;
+    }
+
+    .nav_header_mobile {
+        display: flex;
+    }
+
+    .nav_header_mobile button {
+        color: #ffffff;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .footer_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer_copyright {
+        margin-bottom: 20px;
+    }
+
+    .footer_blog {
+        margin-bottom: 30px;
+    }
+
+    .footer_mntn {
+        margin-bottom: 60px;
+    }
+
+    footer {
+        margin-top: 110px;
+        margin-bottom: 60px;
+    }
+
+    .section_container {
+        row-gap: 40px;
+    }
+
+    .rotate_text {
+        transform: none;
+        top: 0;
+    }
+
+    .start_container {
+        background-size: cover;
+        background-position: center;
+        height: 850px;
+    }
+
+    .socials {
+        position: absolute;
+        left: 60%;
+        top: 15%;
+    }
+
+    .socials ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .socials ul li {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .content {
+        margin-left: 20px;
+    }
+
+    .nav_header_mobile_open ul:first-child {
+        padding-top: 64px;
+        padding-left: 38px;
+        padding-right: 41px;
+        padding-bottom: 64px;
+    }
+
+    .nav_header_mobile_open ul:last-child {
+        padding-bottom: 64px;
+        padding-left: 38px;
+        padding-right: 41px;
+        flex-direction: column;
+    }
+
+    .nav_header_mobile_open ul li:first-child,
+    .nav_header_mobile_open ul li:nth-child(2),
+    .nav_header_mobile_open ul li:nth-child(3) {
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    .nav_header_mobile_open ul li:last-child {
+        position: absolute;
+        right: 42px;        
+    }
+
+    .nav_header_mobile_open ul:last-child li:last-child {
+        bottom: 146px;     
+    }
+
+    .nav_header_mobile_open {
+        height: 350px;
+        z-index: 999;
+    }
+}
