@@ -23,7 +23,6 @@
     .section_img img,
     .section_img img {
         object-fit: contain;
-        max-width: 867px;
     }
 
     .section1 .section_img,
